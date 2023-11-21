@@ -3,17 +3,17 @@
   і повертає boolean значення, що вказує, чи це день робочий чи вихідний.
 */
 enum Day {
-  Monday = 0,
-  Tuesday = 0,
-  Wednesday = 0,
-  Thursday = 0,
-  Friday = 0,
-  Saturday = 1,
-  Sunday = 1
+  MONDAY ='Monday',
+  TUESDAY = 'Tuesday',
+  WEDNESDAY = 'Wednesday',
+  THURSDAY= 'Thursday',
+  FRIDAY= 'Friday',
+  SATURDAY='Saturday',
+  SUNDAY= 'Sunday'
 }
 
-function isWeekend(Day:Day):boolean {
-  if (Day) {
+function isWeekend(day:Day):boolean {
+  if (day === Day.SATURDAY || day === Day.SUNDAY) {
     return true;
   }
   return false;

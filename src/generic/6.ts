@@ -7,12 +7,12 @@
   Виправте тип у аргументі функції так, щоб не було помилок типу.
 */
 
-type User = {
+type User = Partial<  {
   name: string;
   surname: string;
   email: string;
   password: string;
-}
+}>
 
 function createOrUpdateUser(initialValues: User) {
   // Оновлення користувача

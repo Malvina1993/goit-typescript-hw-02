@@ -4,7 +4,7 @@
 */
 
 
-function merge<T> (objA:object, objB:T): T {
+function merge<T> (objA:object, objB:object): object {
   return Object.assign(objA, objB);
 }
 
